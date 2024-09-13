@@ -14,6 +14,10 @@ public class DelegationSortedIntList implements IntegerList {
     private SortedIntList sortedIntList;
     private int element_TotalNum;
     
+    public DelegationSortedIntList(){
+        this.sortedIntList = new SortedIntList();
+    }
+    
     @Override
     public boolean add(int num){
         this.element_TotalNum++;
